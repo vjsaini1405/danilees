@@ -38,7 +38,7 @@ const Notification = () => {
 
   return (
     <View style={styles.mainContainer}>
-      <ToolBar leftIcon isBack title="Notifications" />
+      <ToolBar left isBack title="Notifications" />
       <FlatList
         keyExtractor={item => item?.id.toString()}
         data={notificationListData}

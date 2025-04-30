@@ -47,7 +47,7 @@ const ToolBar: FC<ToolBarProps> = ({
              </AppText> : 
              <Image
              source={backIcon}
-             style={{width: 25, height: 25}}
+             style={styles.backIconStyle}
              resizeMode="contain"
              tintColor={Colors.white}
            />
@@ -55,14 +55,6 @@ const ToolBar: FC<ToolBarProps> = ({
           
         </TouchableOpacity>
       )}
-      {/* {leftTitle && (
-        <TouchableOpacity 
-        onPress={handleLeftOnPress}
-        >
-       
-        </TouchableOpacity> 
-        )
-      } */}
       <View style={styles.secondContainer}>
         <AppText color={WHITE} weight={BOLD} type={EIGHTEEN}>
           {title}
@@ -101,4 +93,5 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
   },
+  backIconStyle:{width: 25, height: 25}
 });
