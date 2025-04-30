@@ -1,0 +1,10 @@
+export const HOME_SCREEN: string = 'HOME_SCREEN';
+export const LOGIN_SCREEN: string = 'LOGIN_SCREEN';
+export const SPLASH_SCREEN: string = 'SPLASH_SCREEN';
+export const SIGNUP_SCREEN: string = 'SIGNUP_SCREEN';
+export const SCHEDULE_SCREEN:string = "SCHEDULE_SCREEN";
+export const BOTTOM_TAB_NAVIGATIION:string = "BOTTOM_TAB_NAVIGATIION";
+export const BOOKING_SCREEN:string = "BOOKING_SCREEN";
+export const PROFILE_SCREEN:string = "PROFILE_SCREEN";
+export const NOTIFICATION_SCREEN:string = "NOTIFICATION_SCREEN"
+export const RECUSSING_SCREEN:string = "RECUSSING_SCREEN"

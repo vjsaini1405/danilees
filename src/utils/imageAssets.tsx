@@ -1,0 +1,9 @@
+export const LogoImage = require('../assets/images/DaniLees_Logo.png');
+export const notificationIcon = require('../assets/icons/notification-icon.png');
+export const scheduleServiceIcon = require('../assets/icons/schedule.png');
+export const calenderIcon = require('../assets/icons/calendar.png');
+export const profileIcon = require('../assets/icons/profile-user.png');
+export const filterIcon = require('../assets/icons/filter.png');
+export const filterCalenderIcon = require('../assets/icons/filtercalendar.png');
+export const nextIcon = require('../assets/icons/next.png');
+export const backIcon = require('../assets/icons/back.png');
