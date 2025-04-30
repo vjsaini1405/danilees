@@ -11,9 +11,6 @@ let buildVersion = ReactNativeVersionInfo.buildVersion;
 
 
 const Profile = () => {
-  console.log("version",version);
-  console.log(buildVersion)
-  
   const ProfileData = [
     {id: 1, title: 'My Profile', onPress: () => {}},
     {id: 2, title: 'Invoices', onPress: () => {}},

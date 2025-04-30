@@ -1,5 +1,6 @@
 export const HOME_SCREEN: string = 'HOME_SCREEN';
 export const LOGIN_SCREEN: string = 'LOGIN_SCREEN';
+export const FORGOT_PASSWORD_SCREEN: string = 'FORGOT_PASSWORD_SCREEN';
 export const SPLASH_SCREEN: string = 'SPLASH_SCREEN';
 export const SIGNUP_SCREEN: string = 'SIGNUP_SCREEN';
 export const SCHEDULE_SCREEN:string = "SCHEDULE_SCREEN";

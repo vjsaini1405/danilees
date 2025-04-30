@@ -14,20 +14,10 @@ import {
   WHITE,
 } from '../../components/AppText';
 import TabButton from '../../components/TabButton';
+import { scheduleServicetab } from '../../utils/dummyData';
 
 const ScheduleService = () => {
   const [activeTab, setActiveTab] = useState(0);
-
-  const tab = [
-    {
-      title: 'Adhhoc',
-      id: 1,
-    },
-    {
-      title: 'Recurring',
-      id: 2,
-    },
-  ];
 
   const adhocData = [
     {id: 1, title: "DaniLee's Pelham, NY", onPress: () => {}},
@@ -52,7 +42,7 @@ const ScheduleService = () => {
           Schedule a Service
         </AppText>
         <TabButton
-          tab={tab}
+          tab={scheduleServicetab}
           activeTab={activeTab}
           handleOnPress={index => {
             setActiveTab(index);

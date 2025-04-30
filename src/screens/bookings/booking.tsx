@@ -23,20 +23,10 @@ import TabButton from '../../components/TabButton';
 import ListEmptyComponent from '../../components/ListEmptyComponent';
 import NavigationService from '../../navigation/NavigationService';
 import * as routes from '../../navigation/routes';
+import { bookingTab } from '../../utils/dummyData';
 
 const Booking = () => {
   const [activeTab, setActiveTab] = useState(0);
-
-  const tab = [
-    {
-      title: 'In-Progress',
-      id: 1,
-    },
-    {
-      title: 'Completed',
-      id: 2,
-    },
-  ];
 
   const Data = [];
 
@@ -53,7 +43,7 @@ const Booking = () => {
       />
       <View style={styles.containerStyle}>
         <TabButton
-          tab={tab}
+          tab={bookingTab}
           activeTab={activeTab}
           handleOnPress={index => setActiveTab(index)}
         />

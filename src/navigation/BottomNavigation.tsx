@@ -3,7 +3,6 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Colors} from '../theme';
 import * as routes from './routes';
-import {AppText, MEDIUM} from '../components/AppText';
 import ScheduleService from '../screens/schedule/scheduleService';
 import {
   calenderIcon,
@@ -15,7 +14,6 @@ import Profile from '../screens/profile';
 
 const Tab = createBottomTabNavigator();
 
-// Tab Icon Component with Focused State and Label
 const TabIcon = ({icon, focused}: any) => (
   <View style={focused ? styles.tabFocused : styles.tabUnfocused}>
     <Image
@@ -88,8 +86,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   tabFocused: {
-    // backgroundColor: Colors.tabBg,
-    // borderRadius: 30,
     paddingHorizontal: 12,
     paddingVertical: 6,
     alignItems: 'center',

@@ -8,6 +8,7 @@ import SplashScreen from '../screens/splashScreen';
 import BottomNavigation from './BottomNavigation';
 import Notification from '../screens/notification';
 import Recurring from '../screens/bookings/recurring';
+import ForgotPasword from '../screens/auth/forgotPasword';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const Navigation = () => {
         }}>
         <Stack.Screen name={routes?.SPLASH_SCREEN} component={SplashScreen} />
         <Stack.Screen name={routes?.LOGIN_SCREEN} component={Login} />
+        <Stack.Screen name={routes?.FORGOT_PASSWORD_SCREEN} component={ForgotPasword} />
         <Stack.Screen
           name={routes?.NOTIFICATION_SCREEN}
           component={Notification}

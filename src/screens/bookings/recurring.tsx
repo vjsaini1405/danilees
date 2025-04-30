@@ -4,25 +4,7 @@ import {Colors} from '../../theme';
 import ToolBar from '../../components/ToolBar';
 import {notificationIcon} from '../../utils/imageAssets';
 import {AppText, EIGHTEEN, THIRTEEN} from '../../components/AppText';
-
-const bookings = [
-  {
-    id: '1',
-    title: 'Monthly Plan (1-child) 1-2 Days',
-    location: 'At Learning Center',
-    startDate: '13-Apr-25',
-    days: 'Monday,Tuesday',
-    status: 'pending',
-  },
-  {
-    id: '2',
-    title: 'Monthly Plan (1-child) 1-2 Days',
-    location: 'At Learning Center',
-    startDate: '13-Mar-25',
-    days: 'Monday,Tuesday',
-    status: 'approved',
-  },
-];
+import { bookingsData } from '../../utils/dummyData';
 
 const Recurring = () => {
   const renderItem = ({item}) => (
@@ -59,7 +41,7 @@ const Recurring = () => {
         rightIcon={notificationIcon}
       />
       <FlatList
-        data={bookings}
+        data={bookingsData}
         keyExtractor={item => item.id}
         renderItem={renderItem}
       />

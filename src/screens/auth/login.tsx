@@ -1,32 +1,21 @@
-import {View, Text, StyleSheet, Image, TextInput, Alert} from 'react-native';
+import {View, StyleSheet, Image, Alert} from 'react-native';
 import React, {useState} from 'react';
 import {Colors, fontFamily} from '../../theme';
-import {
-  AppText,
-  BOLD,
-  EIGHTEEN,
-  FOURTEEN,
-  MEDIUM,
-  THIRTEEN,
-  TWELVE,
-  WHITE,
-} from '../../components/AppText';
+import {AppText, BOLD, FOURTEEN, TWELVE, WHITE} from '../../components/AppText';
 import {LogoImage} from '../../utils/imageAssets';
 import ToolBar from '../../components/ToolBar';
 import FloatingInput from '../../components/FloatingInput';
 import TouchableOpacityView from '../../components/TouchableOpacityView';
 import NavigationService from '../../navigation/NavigationService';
 import * as routes from '../../navigation/routes';
-// import { SparklesIcon as SparklesIconMini } from "react-native-heroicons/mini";
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    console.log("login");
-    Alert.alert("Login Successfully")
-   NavigationService.navigate(routes?.BOTTOM_TAB_NAVIGATIION);
+    Alert.alert('Login Successfully');
+    NavigationService.navigate(routes?.BOTTOM_TAB_NAVIGATIION);
   };
 
   const handleSignUp = () => {
@@ -50,10 +39,14 @@ const Login = () => {
             setValue={setPassword}
           />
         </View>
-        <AppText type={TWELVE} style={styles.forgotPasswordText}>
-          Forgot Password
-        </AppText>
-
+        <TouchableOpacityView
+          onPress={() =>
+            NavigationService.navigate(routes?.FORGOT_PASSWORD_SCREEN)
+          }>
+          <AppText type={TWELVE} style={styles.forgotPasswordText}>
+            Forgot Password
+          </AppText>
+        </TouchableOpacityView>
         <TouchableOpacityView
           onPress={() => handleLogin()}
           containerStyle={styles.buttonStyle}>
